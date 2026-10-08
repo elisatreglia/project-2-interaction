@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knock</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            min-height: 100vh;
+            position: relative;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        /* Testo e opzioni in Alto a Sinistra */
+        .content-top-left {
+            position: fixed;
+            top: 40px;
+            left: 40px;
+            max-width: 450px;
+            z-index: 10;
+        }
+
+        .content-top-left p {
+            font-size: 1.5rem;
+            font-weight: normal;
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+
+        .content-top-left .prompt-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .options-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .option-link {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: none;
+            text-decoration: underline;
+            text-underline-offset: 6px;
+            transition: opacity 0.2s ease;
+        }
+
+        .option-link:hover {
+            opacity: 0.7;
+        }
+
+        /* Immagine Strega a Destra */
+        .strega-picture {
+            position: fixed;
+            top: 50%;
+            right: 40px;
+            transform: translateY(-50%);
+            max-width: 60vw;
+            max-height: 85vh;
+            display: block;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Testo e opzioni in alto a sinistra -->
+    <div class="content-top-left">
+        <p>An elderly woman offers you some food.</p>
+        <p class="prompt-title">What do you do:</p>
+        <ul class="options-list">
+            <li><a href="page-8-take-all.html" class="option-link">Accept</a></li>
+            <li><a href="page-10-connected-paths.html" class="option-link">Refuse and walk away</a></li>
+        </ul>
+    </div>
+
+    <!-- Immagine strega a destra -->
+    <img src="../strega.png" alt="Elderly Woman" class="strega-picture">
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Forest Fork</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            background-image: url('../the-forest-fork.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            min-height: 100vh;
+            position: relative;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        /* Testo in Alto al Centro */
+        .title-top {
+            position: fixed;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        /* Contenitore per le 3 opzioni/immagini in Basso */
+        .choices-container {
+            position: fixed;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .choice-link {
+            display: inline-block;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .choice-link img {
+            max-width: 220px;
+            height: auto;
+            display: block;
+        }
+
+        .choice-link:hover {
+            opacity: 0.8;
+            transform: scale(1.08);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Titolo in alto al centro -->
+    <h1 class="title-top">The Forest Fork: Choose Your Path</h1>
+
+    <!-- 3 Immagini Cliccabili in Basso -->
+    <div class="choices-container">
+        <a href="page-7-red-path.html" class="choice-link">
+            <img src="../red.png" alt="Red Path">
+        </a>
+        <a href="page-8-dark-path.html" class="choice-link">
+            <img src="../dark.png" alt="Dark Path">
+        </a>
+        <a href="page-9-gold-path.html" class="choice-link">
+            <img src="../gold.png" alt="Gold Path">
+        </a>
+    </div>
+
+</body>
+</html>
