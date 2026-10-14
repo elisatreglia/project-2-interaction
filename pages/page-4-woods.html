@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Stranger</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 24px;
+        }
+
+        .stranger-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .option-link {
+            color: #ffffff;
+            font-size: 1.5rem;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        .option-link:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>You meet a stranger</h1>
+
+        <img src="../stranger.jpg" alt="A stranger in the woods" class="stranger-img">
+
+        <h2>Do you trust them?</h2>
+
+        <div class="options-list">
+            <a href="page-5-trust.html" class="option-link">Trust</a>
+            <a href="page-5-dont-trust.html" class="option-link">Don't trust</a>
+            <a href="page-5-ask-questions.html" class="option-link">Ask questions</a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Into the Woods</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .image-link {
+            display: block;
+            max-width: 1440px;
+            width: 100%;
+        }
+
+        .screen-bg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- L'intera immagine è un link che porta a page-2 -->
+    <a href="pages/page-2.html" class="image-link">
+        <img src="screen-1.jpg" alt="Welcome background" class="screen-bg">
+    </a>
+
+</body>
+</html>

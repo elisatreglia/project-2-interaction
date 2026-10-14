@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Something Else</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #20120B; /* Marrone caldo bilanciato (senza grigio) */
+            min-height: 100vh;
+            position: relative;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        /* Testo in Alto a Sinistra */
+        .text-top-left {
+            position: fixed;
+            top: 40px;
+            left: 40px;
+            max-width: 500px;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .text-top-left p {
+            margin-bottom: 10px;
+        }
+
+        /* Immagine al Centro */
+        .ending-picture-center {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 50vw;
+            max-height: 60vh;
+            display: block;
+            object-fit: contain;
+        }
+
+        /* Opzioni in Basso a Destra */
+        .navigation-links {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .nav-option {
+            color: #ffffff;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            transition: opacity 0.2s ease;
+        }
+
+        .nav-option:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Testo in alto a sinistra -->
+    <div class="text-top-left">
+        <p>You didn't find what you came for, but you discover something unexpected.</p>
+        <p>Maybe you didn't find what you wanted. Maybe you found what you needed.</p>
+    </div>
+
+    <!-- Immagine centrale -->
+    <img src="../ending-3.png" alt="Ending 3" class="ending-picture-center">
+
+    <!-- Opzioni in basso a destra -->
+    <div class="navigation-links">
+        <a href="../index.html" class="nav-option">&rarr; Start Over</a>
+        <a href="page-6-forest-fork.html" class="nav-option">&rarr; Return to the Forest Fork</a>
+    </div>
+
+</body>
+</html>

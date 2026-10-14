@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            min-height: 100vh;
+            position: relative;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        /* Testo in Alto a Destra (Ingrandito) */
+        .text-top-right {
+            position: fixed;
+            top: 40px;
+            right: 40px;
+            max-width: 550px;
+            font-size: 1.8rem;
+            line-height: 1.5;
+            text-align: right;
+        }
+
+        /* Immagine Stregatto a Sinistra */
+        .stregatto-picture {
+            position: fixed;
+            top: 50%;
+            left: 50px;
+            transform: translateY(-50%);
+            max-width: 40vw;
+            max-height: 70vh;
+            display: block;
+            object-fit: contain;
+        }
+
+        /* Link Dito in Basso a Destra */
+        .finger-link {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            display: inline-block;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .finger-link img {
+            width: 160px;
+            height: auto;
+            display: block;
+        }
+
+        .finger-link:hover {
+            opacity: 0.7;
+            transform: scale(1.08);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Testo in alto a destra -->
+    <div class="text-top-right">
+        <p>The woods give you what you ask for.</p>
+        <p>But they always take something in return.</p>
+    </div>
+
+    <!-- Immagine a sinistra -->
+    <img src="../stregatto.png" alt="Stregatto" class="stregatto-picture">
+
+    <!-- Immagine dito cliccabile in basso a destra -->
+    <a href="page-6-forest-fork.html" class="finger-link">
+        <img src="../dito.png" alt="Next page">
+    </a>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Path</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            min-height: 100vh;
+            position: relative;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        /* Testo e opzioni in Alto a Sinistra */
+        .content-top-left {
+            position: fixed;
+            top: 40px;
+            left: 40px;
+            max-width: 450px;
+            z-index: 10;
+        }
+
+        .content-top-left p {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .options-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .option-link {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: none;
+            text-decoration: underline;
+            text-underline-offset: 6px;
+            transition: opacity 0.2s ease;
+        }
+
+        .option-link:hover {
+            opacity: 0.7;
+        }
+
+        /* Immagine Casa a Destra con margini/padding */
+        .casa-picture {
+            position: fixed;
+            top: 50%;
+            right: 40px;
+            transform: translateY(-50%);
+            max-width: 55vw;
+            max-height: 80vh;
+            display: block;
+            object-fit: contain;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Testo e opzioni in alto a sinistra -->
+    <div class="content-top-left">
+        <p>There is a house:</p>
+        <ul class="options-list">
+            <li><a href="page-9-enter.html" class="option-link">Enter</a></li>
+            <li><a href="page-9-knock.html" class="option-link">Knock</a></li>
+            <li><a href="page-10-connected-paths.html" class="option-link">Keep walking</a></li>
+        </ul>
+    </div>
+
+    <!-- Immagine casa a destra con margine -->
+    <img src="../casa.png" alt="Casa" class="casa-picture">
+
+</body>
+</html>

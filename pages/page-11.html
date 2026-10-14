@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Decision</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            max-width: 90vw;
+        }
+
+        .text-header {
+            font-size: 1.6rem;
+            font-weight: normal;
+            white-space: nowrap; /* Forza il testo su un'unica riga senza andare a capo */
+        }
+
+        .title-prompt {
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .options-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .option-link {
+            color: #ffffff;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            transition: opacity 0.2s ease;
+        }
+
+        .option-link:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-container">
+        <p class="text-header">You can have what you want, but you have to give something up.</p>
+        <h1 class="title-prompt">WHAT DO YOU DO?</h1>
+
+        <ul class="options-list">
+            <li><a href="page-12-wish.html" class="option-link">You Get Your Wish</a></li>
+            <li><a href="page-12-escape.html" class="option-link">You Escape</a></li>
+            <li><a href="page-12-something-else.html" class="option-link">You Find Something Else</a></li>
+            <li><a href="page-12-lost.html" class="option-link">You Get Lost Forever</a></li>
+            <li><a href="page-12-stay.html" class="option-link">You Stay in the Woods</a></li>
+            <li><a href="page-12-secret.html" class="option-link">The Secret Ending</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
